@@ -1,0 +1,121 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" fill="none">
+  <defs>
+    <linearGradient id="counter-bg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#191D23"/>
+      <stop offset=".52" stop-color="#111419"/>
+      <stop offset="1" stop-color="#0B0D10"/>
+    </linearGradient>
+    <linearGradient id="counter-title" x1="70" y1="130" x2="570" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ECEEF2"/>
+      <stop offset="1" stop-color="#B8BDC6"/>
+    </linearGradient>
+    <linearGradient id="counter-signal" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#C45B61"/>
+      <stop offset="1" stop-color="#914047"/>
+    </linearGradient>
+    <pattern id="counter-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#9299A5" stroke-opacity=".09" stroke-width=".7"/>
+    </pattern>
+    <pattern id="counter-fine-grid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M8 0H0V8" stroke="#9299A5" stroke-opacity=".06" stroke-width=".5"/>
+    </pattern>
+    <clipPath id="counter-frame">
+      <path d="M18 .5H1182L1199.5 18V362L1182 379.5H18L.5 362V18Z"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#counter-frame)">
+    <rect width="1200" height="380" fill="url(#counter-bg)"/>
+    <rect width="1200" height="380" fill="url(#counter-grid)"/>
+
+    <!-- Structural framing -->
+    <path d="M0 75H48L64 59H180" stroke="#9299A5" stroke-opacity=".38"/>
+    <path d="M1020 0V24L1038 42H1200" stroke="#C45B61" stroke-opacity=".75"/>
+    <path d="M0 320H54L70 304H142" stroke="#9299A5" stroke-opacity=".35"/>
+    <path d="M1040 380V354L1060 334H1200" stroke="#C45B61" stroke-opacity=".6"/>
+    <path d="M32 96H44M38 90V102M1156 278H1168M1162 272V284"
+      stroke="#9299A5" stroke-opacity=".65"/>
+
+    <!-- Registration marks -->
+    <path d="M30 42V26H46M1154 26H1170V42M30 338V354H46M1154 354H1170V338"
+      stroke="#9299A5" stroke-width="1.2" stroke-opacity=".65"/>
+    <path d="M44 54H94M44 62H76" stroke="#C45B61" stroke-width="1.5"/>
+    <path d="M1098 310H1156M1122 318H1156" stroke="#9299A5" stroke-opacity=".65"/>
+
+    <!-- Right-side inventory panel -->
+    <g transform="translate(760 57)">
+      <rect width="384" height="258" fill="#0B0D10" fill-opacity=".72" stroke="#292E36"/>
+      <path d="M0 36H384" stroke="#292E36"/>
+      <rect x="16" y="13" width="5" height="10" fill="#C45B61"/>
+      <text x="31" y="22" fill="#9299A5" font-family="monospace" font-size="10" letter-spacing="2.1">INVENTORY / REGISTER 001</text>
+      <text x="366" y="22" text-anchor="end" fill="#76B69A" font-family="monospace" font-size="9" letter-spacing="1.4">SYSTEM READY</text>
+
+      <!-- Column labels -->
+      <text x="20" y="57" fill="#9299A5" font-family="monospace" font-size="9" letter-spacing="1.4">ITEM</text>
+      <text x="224" y="57" text-anchor="end" fill="#9299A5" font-family="monospace" font-size="9" letter-spacing="1.4">QTY</text>
+      <text x="280" y="57" text-anchor="end" fill="#9299A5" font-family="monospace" font-size="9" letter-spacing="1.4">STATUS</text>
+      <path d="M16 67H368" stroke="#292E36"/>
+
+      <!-- Inventory row 1 -->
+      <rect x="16" y="78" width="352" height="38" fill="#191D23"/>
+      <rect x="16" y="78" width="2" height="38" fill="#76B69A"/>
+      <text x="28" y="94" fill="#ECEEF2" font-family="monospace" font-size="11">ITEM / 001</text>
+      <text x="28" y="106" fill="#9299A5" font-family="monospace" font-size="8">STANDARD STOCK</text>
+      <text x="224" y="101" text-anchor="end" fill="#ECEEF2" font-family="monospace" font-size="15">084</text>
+      <circle cx="257" cy="97" r="3" fill="#76B69A"/>
+      <text x="269" y="101" fill="#76B69A" font-family="monospace" font-size="9">IN STOCK</text>
+
+      <!-- Inventory row 2 -->
+      <rect x="16" y="122" width="352" height="38" fill="#12151A"/>
+      <rect x="16" y="122" width="2" height="38" fill="#C45B61"/>
+      <text x="28" y="138" fill="#ECEEF2" font-family="monospace" font-size="11">ITEM / 002</text>
+      <text x="28" y="150" fill="#9299A5" font-family="monospace" font-size="8">REORDER REQUIRED</text>
+      <text x="224" y="145" text-anchor="end" fill="#ECEEF2" font-family="monospace" font-size="15">006</text>
+      <circle cx="257" cy="141" r="3" fill="#C45B61"/>
+      <text x="269" y="145" fill="#C45B61" font-family="monospace" font-size="9">LOW STOCK</text>
+
+      <!-- Inventory row 3 -->
+      <rect x="16" y="166" width="352" height="38" fill="#12151A"/>
+      <rect x="16" y="166" width="2" height="38" fill="#9299A5"/>
+      <text x="28" y="182" fill="#ECEEF2" font-family="monospace" font-size="11">ITEM / 003</text>
+      <text x="28" y="194" fill="#9299A5" font-family="monospace" font-size="8">STOCK VERIFIED</text>
+      <text x="224" y="189" text-anchor="end" fill="#ECEEF2" font-family="monospace" font-size="15">042</text>
+      <circle cx="257" cy="185" r="3" fill="#9299A5"/>
+      <text x="269" y="189" fill="#9299A5" font-family="monospace" font-size="9">RECORDED</text>
+
+      <!-- Ledger footer -->
+      <path d="M16 218H368" stroke="#292E36"/>
+      <text x="20" y="237" fill="#9299A5" font-family="monospace" font-size="9" letter-spacing="1">MOVEMENT LEDGER</text>
+      <path d="M177 234H205L213 226L224 240L236 230H253" stroke="#C45B61" stroke-width="1.4"/>
+      <text x="366" y="237" text-anchor="end" fill="#ECEEF2" font-family="monospace" font-size="10">LOG / 0003</text>
+    </g>
+
+    <!-- Brand typography -->
+    <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+      <text x="70" y="82" fill="#C45B61" font-size="11" font-weight="700" letter-spacing="2.6">COUNTER SYSTEMS  /  INVENTORY CONTROL</text>
+
+      <text x="66" y="195" fill="#C45B61" fill-opacity=".13" font-size="98" font-weight="900" letter-spacing="4">COUNTER</text>
+      <text x="62" y="189" fill="url(#counter-title)" font-size="98" font-weight="900" letter-spacing="4">COUNTER</text>
+
+      <rect x="68" y="211" width="52" height="4" fill="url(#counter-signal)"/>
+      <rect x="126" y="211" width="12" height="4" fill="#C45B61" fill-opacity=".35"/>
+      <text x="70" y="247" fill="#ECEEF2" font-size="16" font-weight="700" letter-spacing="2.0">EVERY UNIT ACCOUNTED FOR.</text>
+      <text x="70" y="273" fill="#9299A5" font-size="13" letter-spacing=".2">A precision-built inventory management system.</text>
+
+      <path d="M70 298H650" stroke="#292E36"/>
+      <path d="M70 298H190" stroke="#C45B61" stroke-width="2.5"/>
+
+      <text x="70" y="324" fill="#C45B61" font-size="10" font-weight="700" letter-spacing="1.8">RECORD</text>
+      <text x="190" y="324" fill="#9299A5" font-size="10" font-weight="700" letter-spacing="1.8">TRACK</text>
+      <text x="292" y="324" fill="#9299A5" font-size="10" font-weight="700" letter-spacing="1.8">RECONCILE</text>
+      <text x="650" y="324" text-anchor="end" fill="#9299A5" font-family="monospace" font-size="9" letter-spacing="1.2">REV. 001 / WORK IN PROGRESS</text>
+    </g>
+
+    <!-- Outer frame -->
+    <path d="M18 .5H1181.8L1199.5 18.2V361.8L1181.8 379.5H18.2L.5 361.8V18.2Z"
+      stroke="#9299A5" stroke-opacity=".4"/>
+    <path d="M0 18H18M1182 380H1200" stroke="#C45B61" stroke-width="2"/>
+    <path d="M1182 0H1200V18" stroke="#C45B61" stroke-width="2"/>
+  </g>
+</svg>
